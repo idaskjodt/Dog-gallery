@@ -1,0 +1,51 @@
+/**
+ * file: style.css
+ * purpose: styles, animation etc
+ * further development: meyer reset perhaps?
+ **/
+
+.heading {
+    font-family: Oswald;
+    font-size: 4em;
+    text-align: center;
+    margin: 2%;
+    text-transform: uppercase;
+}
+
+#exhibition {
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+img {
+    flex-direction: column;
+    max-width: 30%;
+    height: auto;
+    padding: 1.6%;
+}
+
+/*
+img:hover {
+    webkit-filter: blur(20px);
+    filter: blur(2px);
+}
+*/
+
+img {
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all .2s linear;
+    -webkit-backface-visibility: hidden;
+}
+
+img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
+
+
+#body {
+    width: 100%;
+}
+
